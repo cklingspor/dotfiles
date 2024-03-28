@@ -18,6 +18,7 @@ function module.apply_to_config(config)
   config.use_fancy_tab_bar = false
   config.hide_tab_bar_if_only_one_tab = true
   config.window_background_opacity = 0.95
+  config.scrollback_lines = 10000 
 end
 
 return module
