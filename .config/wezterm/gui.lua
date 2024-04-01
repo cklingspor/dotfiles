@@ -15,6 +15,10 @@ function module.apply_to_config(config)
    brightness = 0.7,
   }
   config.color_scheme = 'rose-pine'
+  config.colors = {
+    -- the background color of selected text
+    selection_bg = '#eb6f92', 
+  }
   config.use_fancy_tab_bar = false
   config.hide_tab_bar_if_only_one_tab = true
   config.window_background_opacity = 0.95
