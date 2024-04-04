@@ -154,7 +154,32 @@ function module.apply_to_config(config)
     key="RightArrow", 
     mods="OPT", 
     action=wezterm.action{SendString="\x1bf"}
-  },  
+  }, 
+  -- Beginning of line
+  {
+    key="LeftArrow",
+    mods="OPT",
+    action=wezterm.action{SendString="\x01"}
+  },
+  -- End of line
+  {
+    key="RightArrow",
+    mods="OPT",
+    action=wezterm.action{SendString="\x05"}
+  },
+  -- Deletes the word right of the cursor
+  {
+    key="RightArrow",
+    mods="OPT",
+    action=wezterm.action{SendString="\x1bd"}
+  },
+  -- Deletes the word right of the cursor
+  {
+    key="LeftArrow",
+    mods="OPT",
+    action=wezterm.action{SendString="\x17"}
+  }
+  
 }
   -- Disable dead keys
   config.use_dead_keys = false
