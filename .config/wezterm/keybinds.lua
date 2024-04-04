@@ -170,13 +170,13 @@ function module.apply_to_config(config)
   -- Deletes the word right of the cursor
   {
     key="RightArrow",
-    mods="OPT",
+    mods="CMD",
     action=wezterm.action{SendString="\x1bd"}
   },
   -- Deletes the word right of the cursor
   {
     key="LeftArrow",
-    mods="OPT",
+    mods="CMD",
     action=wezterm.action{SendString="\x17"}
   }
   
