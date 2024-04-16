@@ -8,4 +8,4 @@ ln -s $PWD/.vimrc $HOME/.vimrc
 
 
 # TODO Create custom .zshrc that contains alias cat='bat' 
-ln -s /.zshrc  ~/.zshrc
+ln -s $PWD/.zshrc  $HOME/.zshrc
