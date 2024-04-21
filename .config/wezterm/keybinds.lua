@@ -158,13 +158,13 @@ function module.apply_to_config(config)
   -- Beginning of line
   {
     key="LeftArrow",
-    mods="OPT",
+    mods="OPT|CMD",
     action=wezterm.action{SendString="\x01"}
   },
   -- End of line
   {
     key="RightArrow",
-    mods="OPT",
+    mods="OPT|CMD",
     action=wezterm.action{SendString="\x05"}
   },
   -- Deletes the word right of the cursor
