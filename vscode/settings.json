@@ -1,0 +1,134 @@
+{
+    // https://github.com/Melkeydev/vscode_bindings/blob/main/keybindings.json
+    // workbench
+    "workbench.colorTheme": "Rosé Pine",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.formatOnSave": true,
+    "files.autoSave": "onFocusChange",
+    "typescript.preferences.quoteStyle": "single",
+    "javascript.preferences.quoteStyle": "single",
+    "[python]": {
+        "editor.formatOnType": true,
+        "editor.defaultFormatter": "ms-python.autopep8",
+        "editor.formatOnSave": true
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "redhat.telemetry.enabled": false,
+    "yaml.customTags": [
+        "!And",
+        "!And sequence",
+        "!If",
+        "!If sequence",
+        "!Not",
+        "!Not sequence",
+        "!Equals",
+        "!Equals sequence",
+        "!Or",
+        "!Or sequence",
+        "!FindInMap",
+        "!FindInMap sequence",
+        "!Base64",
+        "!Join",
+        "!Join sequence",
+        "!Cidr",
+        "!Ref",
+        "!Sub",
+        "!Sub sequence",
+        "!GetAtt",
+        "!GetAZs",
+        "!ImportValue",
+        "!ImportValue sequence",
+        "!Select",
+        "!Select sequence",
+        "!Split",
+        "!Split sequence"
+    ],
+    "diffEditor.ignoreTrimWhitespace": false,
+    "rest-client.environmentVariables": {
+        
+        "local": {
+            "api-url": "http://127.0.0.1:8080",
+            "sso-url": "http://localhost:8180/auth/realms/LHT/protocol/openid-connect/token",
+            "client-id": "sample_app"
+          },
+          "development": {
+            "api-url": "https://spring-sample-api-develop.apps.ham.lhtcloud.com",
+            "sso-url": "https://sso.app.lhtcloud.com/auth/realms/LHT/protocol/openid-connect/token",
+            "client-id": "sample_app"
+          },
+        "$shared": {}
+    },
+    "window.zoomLevel": 0.5,
+    "ansible.ansible.path": "/opt/homebrew/bin/ansible",
+    "ansible.validation.lint.path": "/opt/homebrew/bin/ansible-lint",
+    "git.autofetch": true,
+    "vs-kubernetes": {
+      "vscode-kubernetes.minikube-path-mac": "/Users/christophklingspor/.vs-kubernetes/tools/minikube/darwin-arm64/minikube",
+      "vs-kubernetes.minikube-show-information-expiration": "2024-05-09T07:11:57.875Z"
+    },
+    "python.createEnvironment.trigger": "off",
+    "git.openRepositoryInParentFolders": "never",
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": false,
+
+    // terminal
+    "terminal.integrated.fontFamily": "Fira Code",
+    "terminal.integrated.cursorBlinking": true,
+
+    // vim
+    "vim.leader": "<Space>",
+    "vim.hlsearch": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+    // NAVIGATION
+    // switch b/w buffers
+    { "before": ["<S-h>"], "commands": [":bprevious"] },
+    { "before": ["<S-l>"], "commands": [":bnext"] },
+
+    // splits
+    { "before": ["leader", "v"], "commands": [":vsplit"] },
+    { "before": ["leader", "s"], "commands": [":split"] },
+
+    // panes
+    {
+      "before": ["leader", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["leader", "j"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["leader", "k"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["leader", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    // NICE TO HAVE
+    { "before": ["leader", "w"], "commands": [":w!"] },
+    { "before": ["leader", "q"], "commands": [":q!"] },
+    { "before": ["leader", "x"], "commands": [":x!"] },
+    {
+      "before": ["[", "d"],
+      "commands": ["editor.action.marker.prev"]
+    },
+    {
+      "before": ["]", "d"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["<leader>", "c", "a"],
+      "commands": ["editor.action.quickFix"]
+    },
+    { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] },
+    { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"] },
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    }
+  ],
+}
