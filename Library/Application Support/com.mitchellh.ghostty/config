@@ -52,3 +52,8 @@ theme = Rose Pine
 keybind = shift+enter=text:\n
 split-divider-color = #FAF4ED
 
+# Adds 10 pixels of padding to the left/right and 5 pixels to the top/bottom of every split
+window-padding-x = 10
+window-padding-y = 5
+# Automatically balances any leftover pixels between all fou    r edges of the split to minimize lopsidedness
+window-padding-balance = true
