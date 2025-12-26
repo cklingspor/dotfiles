@@ -7,3 +7,13 @@ add_newline = true
 # Replace the '❯' symbol in the prompt with '➜'
 [character] # The name of the module we are configuring is 'character'
 success_symbol = '[➜](bold green)' # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
+
+[directory]
+# Shows the last 3 directories in the path
+truncation_length = 3
+
+# Ensures it doesn't shorten to only the project root when in a Git repo
+truncate_to_repo = false
+
+# Optional: ensures folder names aren't shortened to single letters (like fish shell)
+fish_style_pwd_dir_length = 0
