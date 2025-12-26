@@ -1,16 +1,28 @@
 {
     // https://github.com/Melkeydev/vscode_bindings/blob/main/keybindings.json
     // workbench
-    "workbench.colorTheme": "Rosé Pine",
+    "workbench.colorTheme": "Rosé Pine Moon",
     "workbench.iconTheme": "material-icon-theme",
-    "editor.formatOnSave": true,
+    "editor.colorDecorators": true,
+    "editor.colorDecoratorsActivatedOn": "clickAndHover",
     "files.autoSave": "onFocusChange",
     "typescript.preferences.quoteStyle": "single",
     "javascript.preferences.quoteStyle": "single",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
     "[python]": {
         "editor.formatOnType": true,
-        "editor.defaultFormatter": "ms-python.autopep8",
+        "editor.defaultFormatter": "ms-python.black",
         "editor.formatOnSave": true
+    },
+    "[terraform]": {
+      "editor.defaultFormatter": "hashicorp.terraform",
+      "editor.formatOnSave": true,
+      "editor.formatOnSaveMode": "file"
     },
     "javascript.updateImportsOnFileMove.enabled": "always",
     "redhat.telemetry.enabled": false,
@@ -43,7 +55,7 @@
         "!Split",
         "!Split sequence"
     ],
-    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.ignoreTrimWhitespace": true,
     "rest-client.environmentVariables": {
         
         "local": {
@@ -62,10 +74,6 @@
     "ansible.ansible.path": "/opt/homebrew/bin/ansible",
     "ansible.validation.lint.path": "/opt/homebrew/bin/ansible-lint",
     "git.autofetch": true,
-    "vs-kubernetes": {
-      "vscode-kubernetes.minikube-path-mac": "/Users/christophklingspor/.vs-kubernetes/tools/minikube/darwin-arm64/minikube",
-      "vs-kubernetes.minikube-show-information-expiration": "2024-05-09T07:11:57.875Z"
-    },
     "python.createEnvironment.trigger": "off",
     "git.openRepositoryInParentFolders": "never",
     "[json]": {
@@ -131,4 +139,42 @@
       "commands": ["editor.action.showDefinitionPreviewHover"]
     }
   ],
+  "go.toolsManagement.autoUpdate": true,
+  "editor.lineNumbers": "relative",
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "vim.smartRelativeLine": true,
+  "azureResourceGroups.groupBy": "resourceGroup",
+  "[makefile]": {
+    "editor.detectIndentation": false
+  },
+  "docker.extension.enableComposeLanguageServer": false,
+  "workbench.editor.empty.hint": "hidden",
+  "[markdown]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
+  "git.blame.editorDecoration.enabled": true,
+  "editor.formatOnSave": true,
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "cSpell.userWords": [
+    "artmas",
+    "idoc",
+    "Landgard"
+  ],
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "aws.cloudformation.telemetry.enabled": false
 }
